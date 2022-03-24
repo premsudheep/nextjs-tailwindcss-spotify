@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* @font-face {
+  font-family: 'Gotham-Medium-Regular';
+  src: local('Gotham-Medium-Regular'),
+    url('fonts/Gotham-Medium-Regular.ttf') format('ttf');
+  font-weight: normal;
+} */
+
+@layer components {
+  .button {
+    @apply h-5 w-5 transform cursor-pointer transition duration-100 ease-out hover:scale-125;
+  }
+}
